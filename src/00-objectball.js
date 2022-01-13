@@ -123,9 +123,26 @@ const totalData = {
 
 
 console.log(totalData)
+
+function homeTeamName() {
+    let object = gameObject()
+    return object['homeTeam']['teamName']
+}
+console.log(homeTeamName())
+
+  
+
 } ;
 
-gameObject();
+
+
+
+
+
+
+
 
 
 // console.log(gameObject());
+
+
