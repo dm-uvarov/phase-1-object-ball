@@ -59,9 +59,6 @@ const totalData = {
         
         }
     },// end of hometeam object
-
-
-
     awayTeam : {
         teamName: 'Charlotte Hornets',
         colors: ['Turquoise', 'Purple'],
@@ -121,8 +118,10 @@ const totalData = {
     }//
 }
 
+return totalData
+}
 
-console.log(totalData)
+// console.log(totalData)
 
 function homeTeamName() {
     let object = gameObject()
@@ -132,7 +131,7 @@ console.log(homeTeamName())
 
   
 
-} ;
+
 
 
 
