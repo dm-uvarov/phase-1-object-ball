@@ -1,9 +1,10 @@
 function gameObject() {
-    console.log(gameObject);
+    // console.log(gameObject);
 
-    const homeTeam = {
+const totalData = {
+    homeTeam:{ 
         teamName: 'Brooklyn Nets',
-        colors: 'Black, White',
+        colors: ['Black', 'White'],
         players: {
             'Alan Anderson':{
                 number: '0',
@@ -54,14 +55,16 @@ function gameObject() {
                 steals: '4',
                 blocks: '11',
                 slamDunks: '1'
-            }, // end of players objects,
-        },
-    
-    },
+            } // end of Jason
+        
+        }
+    },// end of hometeam object
 
-    const awayTeam = {
+
+
+    awayTeam : {
         teamName: 'Charlotte Hornets',
-        colors: 'Turquoise, Purple',
+        colors: ['Turquoise', 'Purple'],
         players: {
             'Jeff Adrien':{
                 number: '4',
@@ -115,5 +118,14 @@ function gameObject() {
             }, // end of players objects
 
         }
-    }
+    }//
 }
+
+
+console.log(totalData)
+} ;
+
+gameObject();
+
+
+// console.log(gameObject());
