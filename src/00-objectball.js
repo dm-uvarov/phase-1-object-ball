@@ -129,13 +129,57 @@ function homeTeamName() {
 }
 console.log(homeTeamName())
 
-  
+// function numPointScored(playereName){
+//     const gameData = gameObject()
+
+//     for (let key in gameData){
+//         console.log("through", gameData[key]['players']/*.players*/  )
+//     }
+// }  
 
 
+function numPointScored(playereName){
+    const gameData = gameObject()
 
+    for (let key in gameData){
+        
+        const theTeam = gameData[key].players
 
+        for (let player in theTeam){
+            if (playereName === player) {
+                return theTeam[player].points
+            }
+        }
+        /*.players*/  
+    }
+}  
 
+function shoeSize(playereName){
+const found = locatePlayer(playereName)
+    if (found) {
+        return found.points
+    }
 
+    return locatePlayer(playereName).points
+    // if locate true return after &&
+    // locatePlayer(playerName) && locatePlayer(playerName).points
+}  
+
+function locatePlayer(playerName) {
+    const gameData = gameObject()
+
+    for (let key in gameData){
+        
+        const theTeam = gameData[key].players
+
+        for (let player in theTeam){
+            if (playereName === player) {
+                return theTeam[player]
+            }
+        }
+        /*.players*/  
+    }
+}
 
 
 
